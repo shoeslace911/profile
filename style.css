@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Damion&family=League+Spartan:wght@100&family=Quicksand:wght@300&display=swap');
+*{
+  margin:0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url(images/aesthetic.jpg);
+  background-size:cover;
+  background-position: center;
+  background-color: #9A1663;
+}
+.about-me{
+  width: 40%;
+  height:50%;
+  width:100%;
+  margin-bottom: 30%;
+  display: flex;
+}
+.my-image{
+  width:40%;
+  box-shadow: 6px 5px 15px rgb(11, 11, 11);
+  height: 250px;
+  display: block;
+  margin:10% auto 5% auto ;
+}
+.name-and-desc-box h1{
+  -moz-text-shadow: 0px 0px 19px rgba(255, 255, 255, 1);
+  -webkit-text-shadow: 0px 0px 19px rgba(255, 255, 255, 1);
+  -ms-text-shadow: 0px 0px 19px rgba(255, 255, 255, 1);
+  text-shadow: 0px 0px 19px rgb(204, 193, 201);
+}
+.name-and-desc-box p{
+  -moz-text-shadow: 0px 5px 0px rgba(0, 0, 0, 1);
+  -webkit-text-shadow: 0px 5px 0px rgba(0, 0, 0, 1);
+  -ms-text-shadow: 0px 5px 0px rgba(0, 0, 0, 1);
+  text-shadow: 0px 5px 0px rgba(0, 0, 0, 1);
+  font-size: 25px;
+}
+.name-and-desc-box{
+  margin:auto auto;
+}
+.name-and-desc-box h1{
+  font-size: 50px;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  margin:5% auto;
+  text-align: center;
+}
+ul a{
+  color: inherit;
+  font-size: 50px;
+  display: inline;
+  transition: ease-in-out 0.2s;
+  color: wheat;
+}
+ul li{
+  display: inline-block;
+  margin: 2% auto;
+  list-style-type: none;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+ul a:hover{
+  color: white;
+  transition: ease-in-out 0.2s;
+}
+h1{
+  font-family: 'Damion', cursive;
+  color:aliceblue;
+  text-align: center;
+}
+p{
+  font-family: 'League Spartan', sans-serif;
+  font-size: larger;
+  color: rgb(237, 233, 243);
+  text-align: center;
+}
+.container{
+  margin: 5% auto;
+  display: flex;
+  flex-direction: column;
+}
+.black-card{
+  background-color: rgba(36, 25, 35, 0.769);
+  border:white;
+  display: inline-block;
+  margin: 2% auto;
+  width:600px;
+  padding:5%;
+  position: relative;
+  box-shadow: 6px 5px 15px rgb(11, 11, 11);
+}
+.my-website-button{
+  font-size: 20px;
+  background: #E0144C;
+  color: #dcd3d6;
+  border: 1.5px solid black;
+  display: block;
+  width:50%;
+  margin: 5% auto;
+  text-align: center;
+  padding:2.5%;
+  transition: ease-in-out 0.5s;
+}
+.my-website-button:hover{
+  background: #2f040f;
+  color: rgb(255, 255, 255);
+  transition: ease-in-out 0.5s;
+  border: 1.5px solid white;
+  cursor: pointer;
+}
+.liked_things{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.liked_things .black-card{
+  width: 30%;
+  height: 450px;
+}
+.liked_things .black-card img{
+  width: 100%;
+  }
+  .liked_things .deerhunter img{
+  width: 50%;
+  display: block;
+  margin:5% auto;
+  }
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  body{
+  background-size:auto;
+  background-position: center;
+  }
+  .name-and-desc-box{
+    margin: 50% auto;
+  }
+  .my-image{
+    display: none;
+  }
+  .black-card .about-me{
+    margin-top:50%;
+  }
+  .liked_things{
+    flex-direction: column;
+  }
+  .liked_things .black-card{
+    width: 50%;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  body {
+    background-size:auto;
+    background-position: center;
+  }
+  .name-and-desc-box{
+    margin:100% auto;
+  }
+  .liked_things .black-card{
+    width: 60%;
+  }
+  .container {
+    width: 500px;
+  }
+  .black-card{
+    width: 100%;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  body{
+    background-size:auto;
+  }
+  .container {
+    width: 300px;
+  }
+}
